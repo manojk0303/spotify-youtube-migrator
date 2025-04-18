@@ -13,7 +13,7 @@ class SpotifyClient:
         self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
             client_id=credentials["client_id"],
             client_secret=credentials["client_secret"],
-            redirect_uri="http://localhost:8888/callback",
+            redirect_uri="http://127.0.0.1:8888/callback",
             scope="playlist-read-private user-library-read playlist-modify-public"
         ))
 
