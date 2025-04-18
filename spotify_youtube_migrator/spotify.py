@@ -16,7 +16,6 @@ class SpotifyClient:
             redirect_uri="http://127.0.0.1:8888/callback",
             scope="playlist-read-private user-library-read playlist-modify-public"
         ))
-
     def is_authenticated(self):
         try:
             self.sp.current_user()
