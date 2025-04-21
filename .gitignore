@@ -35,3 +35,10 @@ venv/
 ENV/
 env/
 .venv/
+
+# Spotify and YT client ids
+browser.json
+config.json
+
+# cache file
+.cache/

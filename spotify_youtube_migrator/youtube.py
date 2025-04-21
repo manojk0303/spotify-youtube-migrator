@@ -17,10 +17,17 @@ class YouTubeClient:
         for track in tracks:
             query = f"{track['name']} {track['artist']}"
             results = self.yt.search(query)
+            
+            video_id = None
             if results:
-                video_id = results[0]["videoId"]
+                for result in results:
+                    if "videoId" in result:
+                        video_id = result["videoId"]
+                        break
+
+            if video_id:
                 self.yt.add_playlist_items(playlist_id, [video_id])
-                track["found"] = True  # Update the found status
+                track["found"] = True
                 print_colored(f"✅ {track['name']} - {track['artist']} -> Found", "green")
             else:
                 not_found_songs.append(f"{track['name']} - {track['artist']}")
@@ -31,4 +38,4 @@ class YouTubeClient:
             for song in not_found_songs:
                 print_colored(song, "red")
 
-        return tracks  # Return the updated tracks list
+        return tracks
