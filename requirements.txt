@@ -7,3 +7,6 @@ requests==2.32.3
 spotipy==2.25.0
 urllib3==2.3.0
 ytmusicapi==1.10.0
+google-auth==2.35.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0

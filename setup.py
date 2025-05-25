@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="spotify-youtube-migrator",
-    version="1.0.1",
+    version="1.1.1",
     author="Manojkumar K",
     author_email="manojk030303@gmail.com",
     description="A Python package to migrate playlists between Spotify and YouTube Music.",
@@ -17,6 +17,9 @@ setup(
         "spotipy",
         "ytmusicapi",
         "colorama",
+        "google-auth>=2.0.0",
+        "google-auth-oauthlib>=1.0.0",
+        "google-auth-httplib2>=0.2.0"
     ],
     entry_points={
         "console_scripts": [

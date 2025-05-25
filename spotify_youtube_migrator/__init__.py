@@ -1,3 +1,4 @@
+#__init__.py
 """
 spotify_youtube_migrator
 
