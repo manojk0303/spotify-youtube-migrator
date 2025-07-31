@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="spotify-youtube-migrator",
-    version="1.1.1",
+    version="2.0.0",
     author="Manojkumar K",
     author_email="manojk030303@gmail.com",
     description="A Python package to migrate playlists between Spotify and YouTube Music.",
