@@ -17,6 +17,7 @@ jspm_packages/
 .vscode/
 .idea/
 
+.cache
 # OS generated files
 .DS_Store
 Thumbs.db
